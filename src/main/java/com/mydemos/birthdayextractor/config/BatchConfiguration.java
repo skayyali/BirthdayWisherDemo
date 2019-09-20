@@ -93,8 +93,7 @@ public class BatchConfiguration {
 	}
 
 	@Bean
-	public NoOpItemWriter<Person> noOpWriter()
-	{
+	public NoOpItemWriter<Person> noOpWriter() {
 		return new NoOpItemWriter<Person>();
 	}
 
