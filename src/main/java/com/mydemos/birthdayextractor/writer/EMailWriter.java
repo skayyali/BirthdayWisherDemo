@@ -7,6 +7,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class EMailWriter {
+
     @Autowired
     private EMailService eMailService;
 
@@ -16,7 +17,7 @@ public class EMailWriter {
     public void sendBirthdayEmail(String name, String toEMail, String message)  {
         mail.setFrom("Said");
         mail.setTo(toEMail);
-        mail.setSubject("Happy Birthday! :)2");
+        mail.setSubject("Happy Birthday!");
         mail.setContent(message);
 
         eMailService.sendSimpleMessage(mail);
